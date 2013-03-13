@@ -1,6 +1,6 @@
 # Stethoscope
 
-Stethoscope is Rack Middelware that provides heartbeats for your application.  Heartbeats are used to check that your application is functioning correctly.
+Stethoscope is Rack Middleware that provides heartbeats for your application.  Heartbeats are used to check that your application is functioning correctly.
 
 Typically, a tool like Nagios will monitor a heartbeat URL which will return a 200 OK status if everything is ok, or a 500 response for any issues.
 
@@ -18,7 +18,7 @@ Typically, a tool like Nagios will monitor a heartbeat URL which will return a 2
 
 ### Rails 3
 
-Just require Stethoscope in your application. Stethoscope has a Railtie that will configure Stethoscope to work
+Just require Stethoscope in your application. Stethoscope has a Railtie that will configure Stethoscope to work.
 
 ## Customizing Stethoscope
 
