@@ -180,11 +180,7 @@ class Stethoscope
   end
 
   def check_heartbeat?(path)
-    regexps = [ %r|#{self.class.url}(\.json)?| ]
-    self.class.buckets.each do |name, _|
-      regexps << %r|#{File.join(self.class.url, name)}(\.json)|
-    end
-    regexps.any?{|r| path =~ r}
+    path == self.class.url || path == (self.class.url + '.json')
   end
 
   def format(path)
